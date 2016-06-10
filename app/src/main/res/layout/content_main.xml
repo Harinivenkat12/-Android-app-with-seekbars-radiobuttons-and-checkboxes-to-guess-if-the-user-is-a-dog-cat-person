@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="dogorcat.myandroid.achitu.dogorcatperson.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="#b17f1c">
+
+
+
+    <ScrollView
+        android:background="#ced8e2"
+        android:layout_width="350dp"
+        android:layout_height="420dp"
+        android:id="@+id/scrollViewId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp"
+            android:id="@+id/linearLayout1Id"
+            android:layout_gravity="center_horizontal"
+            >
+
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/caninesId"
+                android:text="@string/canines_ques"
+                />
+
+            <RadioGroup
+                android:id="@+id/radioGroupCaninesId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="false">
+
+                <RadioButton
+
+                    android:id="@+id/caninesYesId"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/canines_yes"/>
+
+                <RadioButton
+
+                    android:id="@+id/caninesNoId"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@string/canines_no"/>
+
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/felineTextId"
+                android:text="@string/feline_ques"
+                android:paddingTop="15dp"
+                />
+
+                <SeekBar
+                    android:id="@+id/felineSeekBarId"
+                    android:layout_height="wrap_content"
+                    android:layout_width="300dp"
+                    android:max="10"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/caninesNoId"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="25dp"
+                    android:id="@+id/seekBarTextViewId"
+                    android:text="@string/comfortableness"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cutenessId"
+                android:text="@string/cuteness"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:id="@+id/cuteDogId"
+                    android:text="@string/cute_dog"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:id="@+id/cuteCatId"
+
+                    android:text="@string/cute_cat"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/drollId"
+                android:text="@string/drool_ques"
+
+
+                android:layout_height="wrap_content" />
+            
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:id="@+id/radioGrpDrollId"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/drollYesId"
+                        android:text="@string/droll_yes"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/drollNoId"
+                        android:text="@string/droll_no"
+                        android:paddingBottom="10dp"/>
+
+                </RadioGroup>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/scrollViewId"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_vertical"
+        >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/result_title"
+                android:id="@+id/resultButtonId"
+                android:layout_below="@+id/scrollViewId"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="15dp"
+                android:layout_marginLeft="130dp"
+                android:gravity="center"
+              
+                android:background="#f0b0b0"
+                android:textColor="#090909" />
+        </LinearLayout>
+
+
+
+
+</RelativeLayout>
